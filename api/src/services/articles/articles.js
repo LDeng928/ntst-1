@@ -6,16 +6,6 @@ export const beforeResolver = (rules) => {
   rules.add(requireAuth)
 }
 
-export const searchArticle = ({ tag }) => {
-  return db.article.findMany({
-    where: {
-      tag: {
-        contains: tag,
-      },
-    },
-  })
-}
-
 export const articles = () => {
   return db.article.findMany()
 }

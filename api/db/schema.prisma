@@ -39,8 +39,6 @@ model Article {
   id    Int     @id @default(autoincrement())
   title String  @unique
   description String
-  author String
-  tag String
   createAt DateTime @default(now())
 }
 

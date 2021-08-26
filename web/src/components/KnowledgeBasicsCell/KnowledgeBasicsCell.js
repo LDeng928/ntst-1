@@ -1,14 +1,11 @@
 import Articles from 'src/components/Articles'
 export const QUERY = gql`
-  query FindSearchtagQuery($tag: String!) {
-    searchArticle(tag: $tag) {
+  query KnowledgeBasicsQuery {
+    articles {
       id
       title
-      author
-
-      tag
-      description
-      createAt
+    description
+    createAt
     }
   }
 `
@@ -21,10 +18,10 @@ export const Failure = ({ error }) => (
   <div style={{ color: 'red' }}>Error: {error.message}</div>
 )
 
-export const Success = ({ searchArticle }) => {
+export const Success = ({ articles }) => {
   return (
     <>
-      <Articles articles={searchArticle} />
+      <Articles articles={articles} />
     </>
   )
 }

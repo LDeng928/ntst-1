@@ -21,28 +21,21 @@ describe('articles', () => {
 
   scenario('creates a article', async () => {
     const result = await createArticle({
-      input: {
-        title: 'String7606225',
-        description: 'String',
-        author: 'String',
-        tag: 'String',
-      },
+      input: { title: 'String9601431', description: 'String' },
     })
 
-    expect(result.title).toEqual('String7606225')
+    expect(result.title).toEqual('String9601431')
     expect(result.description).toEqual('String')
-    expect(result.author).toEqual('String')
-    expect(result.tag).toEqual('String')
   })
 
   scenario('updates a article', async (scenario) => {
     const original = await article({ id: scenario.article.one.id })
     const result = await updateArticle({
       id: original.id,
-      input: { title: 'String94487002' },
+      input: { title: 'String72386312' },
     })
 
-    expect(result.title).toEqual('String94487002')
+    expect(result.title).toEqual('String72386312')
   })
 
   scenario('deletes a article', async (scenario) => {

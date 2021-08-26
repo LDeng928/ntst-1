@@ -1,6 +1,5 @@
 import { Link, routes } from '@redwoodjs/router'
 import { useCart } from 'src/components/Cart'
-import Navigation from 'src/components/Navigation'
 const BlogLayout = ({ children }) => {
   const { cart } = useCart()
   return (
@@ -36,6 +35,11 @@ const BlogLayout = ({ children }) => {
               About
             </Link>
 
+            <button className="uppercase block mt-5 text-lg sm:inline-block sm:mt-0 text-ntst-ntst-blue hover:text-ntst-purple mr-4">
+              Shop
+            </button>
+
+
             <Link
               to={routes.contact()}
               className="block mt-5 text-lg sm:inline-block sm:mt-0 text-ntst-ntst-blue hover:text-ntst-purple mr-4"
@@ -44,6 +48,8 @@ const BlogLayout = ({ children }) => {
             </Link>
           </div>
           <div className="flex flex-col md:flex-row md:justify-end">
+            {/* Shopping cart */}
+
             <Link
               to={routes.cart()}
               href="#"
@@ -57,9 +63,12 @@ const BlogLayout = ({ children }) => {
               </span>
             </Link>
             {/* Login */}
-            <div className="inline-block text-sm px-4 py-2 font-semibold leading-none border rounded text-ntst-blue border-white hover:border-transparent hover:text-blue-500 hover:bg-white mt-4 md:mt-0">
-              <Navigation />
-            </div>
+            <button
+              href="#"
+              className="inline-block text-sm px-4 py-2 font-semibold leading-none border rounded text-ntst-blue border-white hover:border-transparent hover:text-blue-500 hover:bg-white mt-4 md:mt-0"
+            >
+              Login
+            </button>
           </div>
         </nav>
       </header>

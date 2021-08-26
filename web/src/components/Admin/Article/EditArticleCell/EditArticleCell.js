@@ -10,8 +10,6 @@ export const QUERY = gql`
       id
       title
       description
-      author
-      tag
       createAt
     }
   }
@@ -22,8 +20,6 @@ const UPDATE_ARTICLE_MUTATION = gql`
       id
       title
       description
-      author
-      tag
       createAt
     }
   }
