@@ -1,10 +1,9 @@
-import { Link, routes } from '@redwoodjs/router'
-import MainProductsCell from 'src/components/MainProductsCell'
+import MainProductsCell from '../../components/MainproductsCell'
 
 const ProductPage = () => {
   return (
     <>
-     <MainProductsCell />
+      <MainProductsCell />
     </>
   )
 }

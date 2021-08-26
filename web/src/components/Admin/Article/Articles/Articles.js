@@ -64,6 +64,8 @@ const ArticlesList = ({ articles }) => {
             <th>Id</th>
             <th>Title</th>
             <th>Description</th>
+            <th>Author</th>
+            <th>Tag</th>
             <th>Create at</th>
             <th>&nbsp;</th>
           </tr>
@@ -74,6 +76,8 @@ const ArticlesList = ({ articles }) => {
               <td>{truncate(article.id)}</td>
               <td>{truncate(article.title)}</td>
               <td>{truncate(article.description)}</td>
+              <td>{truncate(article.author)}</td>
+              <td>{truncate(article.tag)}</td>
               <td>{timeTag(article.createAt)}</td>
               <td>
                 <nav className="rw-table-actions">

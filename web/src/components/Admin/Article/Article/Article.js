@@ -67,6 +67,14 @@ const Article = ({ article }) => {
               <td>{article.description}</td>
             </tr>
             <tr>
+              <th>Author</th>
+              <td>{article.author}</td>
+            </tr>
+            <tr>
+              <th>Tag</th>
+              <td>{article.tag}</td>
+            </tr>
+            <tr>
               <th>Create at</th>
               <td>{timeTag(article.createAt)}</td>
             </tr>

@@ -12,6 +12,7 @@ export const schema = gql`
   type Query {
     products: [Product!]!
     product(id: Int!): Product
+    searchProducts(tag: String!): [Product]
   }
 
   input CreateProductInput {

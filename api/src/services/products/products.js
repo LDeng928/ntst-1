@@ -9,6 +9,15 @@ export const beforeResolver = (rules) => {
 export const products = () => {
   return db.product.findMany()
 }
+export const searchProducts = ({ tag }) => {
+  return db.product.findMany({
+    where: {
+      tag: {
+        contains: tag,
+      },
+    },
+  })
+}
 
 export const product = ({ id }) => {
   return db.product.findUnique({
@@ -17,6 +26,7 @@ export const product = ({ id }) => {
 }
 
 export const createProduct = ({ input }) => {
+  requireAuth()
   return db.product.create({
     data: input,
   })

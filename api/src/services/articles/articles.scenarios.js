@@ -1,6 +1,17 @@
 export const standard = defineScenario({
   article: {
-    one: { title: 'String3354482', description: 'String' },
-    two: { title: 'String348035', description: 'String' },
+    one: {
+      title: 'String9269156',
+      description: 'String',
+      author: 'String',
+      tag: 'String',
+    },
+
+    two: {
+      title: 'String1784333',
+      description: 'String',
+      author: 'String',
+      tag: 'String',
+    },
   },
 })

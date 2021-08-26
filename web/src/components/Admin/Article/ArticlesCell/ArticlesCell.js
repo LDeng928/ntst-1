@@ -8,6 +8,8 @@ export const QUERY = gql`
       id
       title
       description
+      author
+      tag
       createAt
     }
   }

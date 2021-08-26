@@ -3,23 +3,30 @@ export const schema = gql`
     id: Int!
     title: String!
     description: String!
+    author: String!
+    tag: String!
     createAt: DateTime!
   }
 
   type Query {
     articles: [Article!]!
     article(id: Int!): Article
+    searchArticle(tag: String!): [Article]
   }
 
   input CreateArticleInput {
     title: String!
     description: String!
+    author: String!
+    tag: String!
     createAt: DateTime!
   }
 
   input UpdateArticleInput {
     title: String
     description: String
+    author: String
+    tag: String
     createAt: DateTime
   }
 
