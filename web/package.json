@@ -14,9 +14,9 @@
   },
   "dependencies": {
     "@redwoodjs/auth": "^0.36.2",
-    "@redwoodjs/forms": "0.35.2",
-    "@redwoodjs/router": "0.35.2",
-    "@redwoodjs/web": "0.35.2",
+    "@redwoodjs/forms": "^0.36.2",
+    "@redwoodjs/router": "^0.36.2",
+    "@redwoodjs/web": "^0.36.2",
     "@stripe/react-stripe-js": "^1.4.1",
     "@stripe/stripe-js": "^1.16.0",
     "axios": "^0.21.1",

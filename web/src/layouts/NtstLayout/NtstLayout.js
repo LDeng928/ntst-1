@@ -4,7 +4,7 @@ import { useCart } from 'src/components/Cart'
 const BlogLayout = ({ children }) => {
   const { cart } = useCart()
   const { logIn, isAuthenticated, logOut, currentUser } = useAuth()
-  // console.log(currentUser)
+  console.log(currentUser)
   return (
     <>
       <header>
@@ -63,6 +63,7 @@ const BlogLayout = ({ children }) => {
               <Navigation />
             </div> */}
 
+
             <div className="inline-block leading-none text-ntst-blue mt-2">
               <div className="flex flex-col gap-1 justify-center items-center">
                 <button
@@ -78,6 +79,7 @@ const BlogLayout = ({ children }) => {
                   </p>
                 )}
               </div>
+
             </div>
           </div>
         </nav>
